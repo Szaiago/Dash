@@ -1,0 +1,572 @@
+body {
+    margin: 0em;
+    padding: 0em;
+    background-image: url("img/fundo.png");
+    background-size: cover;
+    max-width: 100%;
+}
+.Menutotal {
+    width: 100%;
+    height: 5em;
+}
+.MenuPrincipal {
+    user-select:none;
+    width: 100%;
+    height: 5em;
+    background-color: #a7a7a7;
+    position: fixed;
+    z-index: 1000;
+}
+.Ulprincipal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.Liprincipal {
+    margin-top: 0.5em;
+    display: inline-block;
+}
+.Aprincipal {
+    text-decoration: none;
+    color: black;
+}
+.Ulvertical {
+    list-style: none;
+}
+.login:hover {
+    opacity: 40%;
+    transition: 0.5s;
+}
+input[type=checkbox] {
+    display: none;
+}
+input[type=checkbox]:checked~nav {
+    transform: translate(350px);
+}
+nav {
+    border-radius: 0.3em;
+    width: 20em;
+    height: 50dvh;
+    position: absolute;
+    margin-top: 19px;
+    background-color: rgba(0, 0, 0, 0.637);
+    left: -350px;
+    transition: all 1.0s;
+}
+.TituloVertical {
+    cursor:default;
+    color: #ffffff; 
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-size: 25px;
+}
+.Avertical {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 5px;
+      -moz-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+.Avertical:hover {
+    font-size: 18px;
+    color: rgb(255, 115, 0);
+    -moz-transform: scale(1.1);
+     -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+}
+ .Inicio {
+     color: white;
+     font-size: 25px;
+    }
+.MenuPesquisa {
+    margin: 0px;
+    width: 100%;
+    height: 30em;
+    background-image: url("img/fundopesquisa1.jpg");
+    background-position: center;
+}
+.Ulpesquisa {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.Lipesquisa {
+    margin-left: 25%;
+    margin-right: 10%;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 50%;
+}
+.Barradepesquisa {
+    box-shadow: 0 0 10px black;
+    display: inline-block;
+    margin-top: 10em;
+    width: 49vw;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 5em;
+    user-select:none;
+}
+.Pesquisatext {
+    background-color: rgb(255, 255, 255);
+    width: 99%;
+    height: 3em;
+    font-size: 12px;
+    border: none;
+    color: black;
+    outline: none;
+}
+.Botaopesquisa {
+    margin-left: 3vw;
+    align-items: end;
+    cursor: pointer;
+    height: 3em;
+    background-image: url("img/pesquisa.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 36px;
+    border: none;
+    color: transparent;
+    background-color: #ffffff;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.Botaopesquisa:hover {
+    opacity: 50%;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+     transform: scale(1.1);
+}
+.Destaque {
+    user-select:none;
+    margin-top: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+.AreaProdutos {
+    user-select:none;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.CaixaProduto {
+    width: 260px;
+    height: 280px;
+    position: relative;
+    border-radius: 7px;
+    box-shadow: 0 0 10px black;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 2rem;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.CaixaProduto:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+     transform: scale(1.1);
+     box-shadow: 0 10px 10px black;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.ConteudoProduto {
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.459);
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 7px;
+    transform: translateY(100%);
+    transition: 400ms ease;
+}
+.NomeProduto {
+    text-align: center;
+    margin-top: -20px;
+}
+.InfoProduto {
+    text-align: center;
+    margin-top: -120px;
+}
+.BotaoProduto {
+    cursor: pointer;
+    width: 390px;
+    color: black;
+    background-color: white;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    outline: 3px solid white;
+    outline-offset: 4px;
+}
+.CaixaProduto img:hover + .ConteudoProduto, .ConteudoProduto:hover {
+    transform: translateY(0);
+}
+.Publicidade {
+    user-select:none;
+    width: 100%;
+    height: 500px;
+    background-color: transparents;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Video {
+    box-shadow: 0 0 10px black;
+    width: 80%;
+    height: 500px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.Video:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+     transform: scale(1.1);
+     box-shadow: 0 10px 10px black;
+}
+footer {
+    user-select:none;
+    margin-top: 150px;
+    position: relative;
+    width: 100%;
+    background-color: #a7a7a7;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Onda {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("img/onda.png");
+    background-size: 1000px 100px;
+}
+#Onda1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+#Onda2 {
+    z-index: 1000;
+    opacity: 0.5;
+    bottom: 15px;
+    animation: animateWave_02 4s linear infinite;
+}
+#Onda3 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 10px;
+    animation: animateWave_03 4s linear infinite;
+}
+@keyframes animateWave {
+    0% {background-position-x: 1000px;}
+    100% {background-position-x: 0px; }
+}
+@keyframes animateWave_02 {
+    0% {background-position-x: 0px;}
+    100% {background-position-x: 1000px; }
+}
+.Media {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+.Limedia {
+    list-style: none;
+}
+.Amedia {
+    font-size: 2em;
+    color: black;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+.Amedia:hover {
+    transform: translateY(-10px);
+}
+.Direitos {
+    user-select:none;
+    cursor: default;
+    color: black;
+    text-align: center;
+    font-size: 1.1em;
+}
+@media only screen and (max-device-width: 800px) {
+    .Menutotal {
+    width: 100%;
+    height: 5em;
+}
+.MenuPrincipal {
+    width: 100%;
+    height: 5em;
+}
+.Ulprincipal {
+    margin: 0;
+    padding: 0;
+}
+.Liprincipal {
+    margin-left: 0em;
+    margin-top: 0.5em;
+}
+.login:hover {
+    opacity: 40%;
+    transition: 0.5s;
+}
+input[type=checkbox]:checked~nav {
+    transform: translate(350px);
+}
+nav {
+    border-radius: 0.3em;
+    width: 20em;
+    height: 50dvh;
+    margin-top: 19px;
+    left: -350px;
+}
+.TituloVertical {
+      margin-left: -25px;
+    font-size: 45px;
+}
+.Avertical {
+      margin-left: -25px;
+    font-size: 28px;
+    padding: 10px 5px;
+}
+.Avertical:hover {
+    font-size: 30px;
+    color: rgb(255, 115, 0);
+    transition: 0.3s;
+}
+.MenuPesquisa {
+    margin: 0px;
+    width: 100%;
+    height: 30em;
+}
+.Ulpesquisa {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.Lipesquisa {
+    margin-left: 25%;
+    margin-right: 10%;
+    width: 50%;
+}
+.Barradepesquisa {
+    margin-top: 10em;
+    width: 49vw;
+    padding: 10px;
+    border-radius: 5em;
+}
+.Pesquisatext {
+    width: 83%;
+    height: 4em;
+    font-size: 18px;
+    border-radius: 5em;
+}
+.Botaopesquisa {
+    margin-top: 1.7vw;
+    margin-left: 3vw;
+    height: 3em;
+}
+.CaixaProduto {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    border-radius: 7px;
+    box-shadow: 0 0 10px black;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 2rem;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.ConteudoProduto {
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.459);
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 7px;
+    transform: translateY(100%);
+    transition: 400ms ease;
+}
+.NomeProduto {
+    font-size: 50px;
+    text-align: center;
+    margin-top: -20px;
+}
+.InfoProduto {
+    font-size: 35px;
+    text-align: center;
+    margin-top: -120px;
+}
+.BotaoProduto {
+    cursor: pointer;
+    width: 80%;
+    margin-left: 10%;
+    color: black;
+    background-color: white;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    outline: 3px solid white;
+    outline-offset: 4px;
+}
+.CaixaProduto img:hover + .ConteudoProduto, .ConteudoProduto:hover {
+    transform: translateY(0);
+}
+.Media {
+    margin: 10px 0;
+}
+.Amedia {
+    font-size: 3em;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+.Amedia:hover {
+    transform: translateY(-10px);
+}
+.Direitos {
+    font-size: 2em;
+}
+}
+@media only screen and (max-device-width: 1000px) {
+.Pesquisatext {
+    width: 73%;
+}
+}
+@media only screen and (min-device-width: 1001px) {
+.Pesquisatext {
+    width: 77%;
+}
+.CaixaProdutos {
+    padding: 0px;
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 300px;
+    height: 430px;
+    overflow: hidden;
+ }
+ .ImagemProduto {
+    margin-top: 5px;
+    margin-left: 15px;
+    height: 230px;
+    width: 270px;
+    transform-origin: center center;
+    object-fit: cover;
+ }
+ .H1Produto {
+     margin-top: 5px;
+     font-size: 30px;
+ }
+ .PProdutos {
+     margin-top: -2px;
+     font-size: 28px;
+ }
+ .BotaoProduto {
+    margin-top: -23px;
+    margin-left: 10%;
+    width: 80%;
+    height: 45px;
+ }
+ .BotaoProduto:hover {
+     height: 12%;
+ }
+ .TextoComprar {
+     font-size: 20px;
+ }
+ .TextoComprar:hover {
+     font-size: 20px;
+ }
+ @media only screen and (min-device-width: 1500px) {
+    .Pesquisatext {
+        width: 77%;
+    }
+    .CaixaProdutos {
+        padding: 0px;
+        margin-top: 20px;
+        margin-left: 10px;
+        width: 300px;
+        height: 400px;
+        overflow: hidden;
+     }
+     .ImagemProduto {
+        margin-top: 5px;
+        margin-left: 12px;
+        height: 250px;
+        width: 270px;
+        transform-origin: center center;
+        object-fit: cover;
+     }
+     .H1Produto {
+         margin-top: 5px;
+         font-size: 20px;
+     }
+     .PProdutos {
+         margin-top: -2px;
+         font-size: 20px;
+     }
+     .BotaoProduto {
+        margin-top: -23px;
+        margin-left: 10%;
+        width: 80%;
+        height: 45px;
+     }
+     .BotaoProduto:hover {
+         height: 12%;
+     }
+     .TextoComprar {
+         font-size: 20px;
+     }
+     .TextoComprar:hover {
+         font-size: 20px;
+     }
+}}
